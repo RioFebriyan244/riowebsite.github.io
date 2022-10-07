@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="rioweb.css" />
+  <title>Document</title>
+</head>
+<body>
+ <div class="conteiner">
+   <img src="menu.png" onclick="menuBtn()" id="btn1"/>
+   <img src="menu.png" onclick="menuBtn1()" id="btn2"/>
+    <div id="menu">
+    <li><a href="#">Home</a></li>
+    <br>
+    <li><a href="#profile">profile</a></li>
+    <br>
+    <li><a href="#Aboutme">About me</a></li>
+    <br>
+    <li><a href="#contact">contact</a></li>
+    </div>
+                <h1>Welcome</h1>
+                <br>
+                <br>
+                <br>
+        <span>scroll this about me</span>
+    <div class="btn" onclick="btn()">
+      <a href="#profile"><span id="flue"></span>👇👇👇👇👇</a>
+    </div>
+  </div>
+ <div id="profile">
+   <img src="Rio.jpg"  class="profileimg">
+   <div class="profilevalue">
+     <h1 class="profilevalue1">Hallo Cuy</h1>
+     <span class="profilevalue2">My name is Rio Febriyan</span>
+     <span class="profilevalue3">i life in tegal city vilage</span>
+     <span class="profilevalue4">my hobby is coding</span>
+     <span class="profilevalue5">i'm 20 years old</span>
+     
+   </div>
+ </div>
+ <div id="Aboutme">
+<div class="Aboutme1">
+  <span>programming language i'm learning</span>
+  <div class="conteinerimg">
+  <img src="html.png" class="Aboutmeimg">
+  <img src="css.png" class="Aboutmeimg">
+  <img src="js.png" class="Aboutmeimg">
+  <img src="nodejs.png" class="Aboutmeimg">
+  <img src="reactjs.png" class="Aboutmeimg">
+  <img src="py.jpeg" class="Aboutmeimg" class="Aboutmeimgpy">
+  </div>
+</div>
+<div class="Aboutme2">
+  <span>i'm study in  STIMIK IKMI campus</span>
+</div>
+<div class="Aboutme3">
+  <span>programming language that I already understand</span>
+  <div class="conteinerAboutme">
+   <img src="html.png" class="Aboutme3img">
+  <img src="css.png" class="Aboutme3img" class="css">
+  <img src="js.png" class="Aboutme3img">   
+  </div>
+</div>
+ </div>
+ <div id="contact">
+   <div class="contact1">My acount</div>
+   <div class="contactimg">
+     <a href="https://www.twitter.com/pandatod2" target="blank"><img src="twitter.png" class="contactimg1"/></a>
+     <a href="https://www.instagram.com/riofebriyan._.04" target="blank"><img src="instagram.png" class="contactimg1"/></a>
+     <img src="facebook.png" class="contactimg1" href="htttps://www.facebook.com/"/>
+   </div>
+   <div class="copyright"><span>&copy 2022 Rio Febriyan</span></div>
+ </div>
+  <script>
+  let menu = document.getElementById("menu")
+  let btn1 = document.getElementById("btn1")
+      function menuBtn() {
+      if(menu.style.left == "520px") {
+        btn1.style.left="260px"
+        menu.style.transition = ".5s"
+        menu.style.left = "260px";
+      }
+      else {
+        btn1.style.left = "330px"
+        btn1.style.transition = ".6s"
+        menu.style.left = "520px";
+      }
+     }
+     function menuBtn1(){
+        if(menu.style.left == "1550px"){
+          btn2.style.left = "750px"
+          menu.style.transition = ".6s"
+          menu.style.left = "750px"
+        }
+        else {
+          menu.style.left = "1550px"
+          btn2.style.transition = ".6s"
+          btn2.style.left = "1220px"
+        }
+      }
+    function btn(){
+     let flue = document.getElementById('flue')
+     
+    }
+  </script>
+</body>
+</html>
